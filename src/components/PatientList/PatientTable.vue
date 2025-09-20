@@ -31,8 +31,8 @@
 
 <script setup lang="ts">
 import { Users } from 'lucide-vue-next'
-import { CardContent } from '../../../components/ui/card'
-import { Table, TableBody, TableHead, TableHeader, TableRow } from '../../../components/ui/table'
+import { CardContent } from '@/components/ui/card'
+import { Table, TableBody, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import PatientTableRow from './PatientTableRow.vue'
 import type { Patient } from '@/types/Patient'
 

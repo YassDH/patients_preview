@@ -98,7 +98,8 @@
 
 <script setup lang="ts">
 import { reactive, watch } from 'vue'
-import { getAllStatusOptions, PatientStatus, type PatientDetail } from '@/types/Patient'
+import { PatientStatus, type PatientDetail } from '@/types/Patient'
+import { getAllStatusOptions } from '@/lib/utils'
 import type { UpdatePatientRequest } from '@/services/api'
 
 import {
@@ -108,16 +109,16 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '../../../components/ui/dialog'
-import { Input } from '../../../components/ui/input'
+} from '@/components/ui/dialog'
+import { Input } from '@/components/ui/input'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '../../../components/ui/select'
-import { Button } from '../../../components/ui/button'
+} from '@/components/ui/select'
+import { Button } from '@/components/ui/button'
 
 interface Props {
   open: boolean

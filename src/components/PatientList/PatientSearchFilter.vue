@@ -37,10 +37,10 @@
 
 <script setup lang="ts">
 import { X } from 'lucide-vue-next'
-import { getAllStatusOptions } from '@/types/Patient'
-import { Card, CardContent } from '../../../components/ui/card'
-import { Input } from '../../../components/ui/input'
-import { Button } from '../../../components/ui/button'
+import { getAllStatusOptions } from '@/lib/utils'
+import { Card, CardContent } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 
 const statusOptions = getAllStatusOptions()
 

@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { Card } from '../../../components/ui/card'
+import { Card } from '@/components/ui/card'
 
 interface Props {
   message?: string

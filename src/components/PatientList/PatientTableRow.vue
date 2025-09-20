@@ -32,10 +32,10 @@
 
 <script setup lang="ts">
 import { Eye } from 'lucide-vue-next'
-import { TableCell, TableRow } from '../../../components/ui/table'
-import { Badge } from '../../../components/ui/badge'
-import { Button } from '../../../components/ui/button'
-import { getStatusText, getStatusVariant } from '@/types/Patient'
+import { TableCell, TableRow } from '@/components/ui/table'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import { getStatusText, getStatusVariant } from '@/lib/utils'
 import type { Patient } from '@/types/Patient'
 
 interface Props {

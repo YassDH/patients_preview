@@ -42,12 +42,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { Edit } from 'lucide-vue-next'
-import { getStatusText, getStatusVariant } from '@/types/Patient'
+import { getStatusText, getStatusVariant } from '@/lib/utils'
 import type { PatientDetail } from '@/types/Patient'
 
-import { Card, CardContent, CardHeader, CardTitle } from '../../../components/ui/card'
-import { Button } from '../../../components/ui/button'
-import { Badge } from '../../../components/ui/badge'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 
 interface Props {
   patient: PatientDetail

@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { Card, CardHeader, CardTitle } from '../../../components/ui/card'
+import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 
 interface Props {
   patientCount: number
