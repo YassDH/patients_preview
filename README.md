@@ -25,7 +25,9 @@ This is a Vue 3 web application for managing patient information. Users can view
 
 ## Live Demo
 
-![Patient Management Demo](docs/demo.mp4)
+See it live on https://patients-preview-gamma.vercel.app/
+
+![Patient Management Demo](./docs/demo.mp4)
 
 ## Getting Started
 
@@ -75,13 +77,3 @@ The application will be available at `http://localhost:5173`
 - `npm run test:unit` - Run tests in watch mode (development)
 - `npm run test` - Run tests once
 - `npm run test:ci` - Run tests with coverage (CI/CD)
-
-## API Integration
-
-The application integrates with a REST API for patient data management:
-
-- **GET** `/api/Member` - Fetch all patients
-- **GET** `/api/Member/{id}` - Fetch patient by ID
-- **POST** `/api/Member/{id}` - Update patient information
-
-Base URL: `https://patiro-developer.azurewebsites.net/api`
