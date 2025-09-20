@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import PatientInfoCard from '../PatientInfoCard.vue'
 import { mockPatientDetail } from '@/test-utils/mockData'
+import { fail } from 'assert'
 
 describe('PatientInfoCard', () => {
   it('should render patient name and status', () => {
@@ -36,14 +37,12 @@ describe('PatientInfoCard', () => {
     const buttons = wrapper.findAll('button')
     const editButton = buttons.find((btn) => btn.text().includes('Edit'))
 
-    if (editButton) {
-      await editButton.trigger('click')
-      expect(wrapper.emitted('edit')).toBeTruthy()
-    } else {
-      // Fallback: emit directly if button not found
-      await wrapper.vm.$emit('edit')
-      expect(wrapper.emitted('edit')).toBeTruthy()
+    if (!editButton) {
+      fail('Edit button not found')
     }
+
+    await editButton.trigger('click')
+    expect(wrapper.emitted('edit')).toBeTruthy()
   })
 
   it('should convert camelCase to Title Case', () => {
