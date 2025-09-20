@@ -27,7 +27,7 @@ This is a Vue 3 web application for managing patient information. Users can view
 
 See it live on https://patients-preview-gamma.vercel.app/
 
-![Patient Management Demo](./docs/demo.mp4)
+https://github.com/user-attachments/assets/2dfa55d8-b8d2-4144-b15c-a45b7bdfe02d
 
 ## Getting Started
 
